@@ -1,5 +1,5 @@
 ---
 layout: default
-permalink: "/index.html"
+permalink: "/home.html"
 ---
 # Hallo
