@@ -16,7 +16,7 @@
   <title>{{ site.title }}</title>
   {% endif %}
 
-  <link href="{{ '/assets/semantic/dist/semantic.min.css' | relative_url }}" type="text/css" rel="stylesheet">
+  <link href="{{ '/assets/semantic/dist/semantic.min.css?v=' | append: site.github.build_revision | relative_url }}" type="text/css" rel="stylesheet">
 
 </head>
 <body>
@@ -51,7 +51,7 @@
       </div>
     </footer>
   </div>
-  <script src="{{ '/assets/jquery-3.3.1.min.js' | relative_url }}"></script>
-  <script src="{{ '/assets/semantic/dist/semantic.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/jquery-3.3.1.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  <script src="{{ '/assets/semantic/dist/semantic.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 </body>
 </html>
