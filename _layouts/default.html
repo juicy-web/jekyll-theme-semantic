@@ -18,6 +18,14 @@
 
   <link href="{{ '/assets/semantic/dist/semantic.min.css?v=' | append: site.github.build_revision | relative_url }}" type="text/css" rel="stylesheet">
 
+
+  {% if site.header_content %}
+  {{ site.header_content }}
+  {% endif %}
+
+  {% if page.header_content %}
+  {{ page.header_content }}
+  {% endif %}
 </head>
 <body>
   <div class="ui container">
