@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+  {% seo %}
+
   {% if page.title %}
   {% if site.title %}
   <title>{{ page.title }} | {{ site.title }}</title>
@@ -17,7 +19,6 @@
   {% endif %}
 
   <link href="{{ '/assets/semantic/dist/semantic.min.css?v=' | append: site.github.build_revision | relative_url }}" type="text/css" rel="stylesheet">
-
 
   {% if site.head_content %}
   {{ site.head_content }}
